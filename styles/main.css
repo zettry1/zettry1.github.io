@@ -1,0 +1,26 @@
+body {
+  background-color: bisque;
+}
+.imdb {
+  width: 2rem;
+  height: 1rem;
+  object-fit: cover;
+}
+.bottom-img {
+  object-fit: contain;
+  height: 4rem;
+  width: 7rem;
+}
+.mood-images {
+  object-fit: cover;
+  width: 8rem;
+  height: 8rem;
+}
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+h1,
+h4 {
+  color: cadetblue;
+}
