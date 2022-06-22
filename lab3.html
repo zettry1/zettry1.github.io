@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB 3</title>
+    <link rel="stylesheet" href="./styles/lab3.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="./index.html">
+        <img src="assets/pf.jpeg" class="profile-image" alt="Check" />
+      </a>
+      <div class="main-title">Hello Orgil</div>
+      <button class="button-logout">Logout</button>
+    </div>
+    <div class="container">
+      <div class="title">Product list</div>
+      <table id="customers">
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Action</th>
+        <tr>
+          <td>NodeJs</td>
+          <td>9.9</td>
+          <td>10</td>
+          <td>
+            <div class="action-row">
+              <img class="shopping-cart" src="assets/shop-cart.png" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Angular</td>
+          <td>15</td>
+          <td>10</td>
+          <td>
+            <div class="action-row">
+              <img class="shopping-cart" src="assets/shop-cart.png" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Vue</td>
+          <td>8</td>
+          <td>10</td>
+          <td>
+            <div class="action-row">
+              <img class="shopping-cart" src="assets/shop-cart.png" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Jquery</td>
+          <td>5</td>
+          <td>8</td>
+          <td>
+            <div class="action-row">
+              <img class="shopping-cart" src="assets/shop-cart.png" />
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="title">Your shopping card</div>
+      <table id="customers">
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Action</th>
+        <tr>
+          <td>NodeJs</td>
+          <td>9.9</td>
+          <td>10</td>
+          <td>
+            <div class="action-row">
+              <button class="btn-add">-</button>
+              <input type="text" value="10" />
+              <button class="btn-add">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Angular</td>
+          <td>15</td>
+          <td>10</td>
+          <td>
+            <div class="action-row">
+              <button class="btn-add">-</button>
+              <input type="text" value="10" />
+              <button class="btn-add">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" rowspan="4"><div class="last""> Total: 999$</td>
+        </tr>
+      </table>
+
+      <div class="btn-container">
+        <button type="button" class="btn-order">Place Order</button>
+      </div>
+    </div>
+  </body>
+</html>
