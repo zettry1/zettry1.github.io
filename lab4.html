@@ -8,19 +8,137 @@
     <link rel="stylesheet" href="styles/lab4.css" />
   </head>
   <body>
-    <div>Options</div>
+          <div class="container">
+            <div class="header">
+                Workshop Registration
+            </div>
+            <form action="#">
+                <div>
+                    <a href="#">Register now while seats are available</a>
+                </div>
+                <div class="form">
+                    <div class="column">
+                        <div class="row">
+                            <div class="item">First Name *</div>
+                            <div class="item">
+                                <input type="text" required pattern="[A-Za-z\- ]+" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">Last Name *</div>
+                            <div class="item">
+                                <input type="text" required pattern="[A-Za-z\- ]+" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">Company/Institution *</div>
+                            <div class="item">
+                                <input type="text" required pattern="[A-Za-z\-+. " />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">Address *</div>
+                            <div class="item">
+                                <textarea rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">City</div>
+                            <div class="item">
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">State/Provence/Region</div>
+                            <div class="item">
+                                <select name="state">
+                                    <option selected>-Select-</option>
+                                    <option>Iowa</option>
+                                    <option>Missouri</option>
+                                    <option>Illinois</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">Country</div>
+                            <div class="item">
+                                <select name="country">
+                                    <option selected>-Select-</option>
+                                    <option>CANADA</option>
+                                    <option>KOREA</option>
+                                    <option>AUSTRALIA</option>
+                                    <option>UNITED KINGDOM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">Email *</div>
+                            <div class="item">
+                                <input type="email" name="email" required pattern="[a z0 9._+]+@[a z0 9.9.\\--]+]+\\.[a z]{2,3}" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">Phone Number *</div>
+                            <div class="item">
+                                <input type="text" name="phone" required pattern="[1-9]\d{9}" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="row">
+                            Lunch:
+                            <div class="item">Meal Preference</div>
+                            <div class="item">
+                                <select name="country">
+                                    <option selected>-Select-</option>
+                                    <option>Meat</option>
+                                    <option>Steak</option>
+                                    <option>Brocolli</option>
+                                    <option>Cheese burget</option>
+                                </select>
+                            </div>
+                        </div>
 
-    <div class="container">
-      <div class="form-container">
-        <div class="col">
-          <div class="row"><label>Firstname</label> <input type="text" /></div>
+                        <div class="payment-mode">
+                          Payment Details
+                            <div class="row">
+                                <div class="item">Payment Mode</div>
+                                <div class="item payment-mode">
+                                    <label><input type="checkbox" name="cash"/>Cash</label>
+                                    <label><input type="checkbox" name="cheque"/>Cheque</label>
+                                    <label><input type="checkbox" name="demand"/>Demand Draft</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item">DD/Cheque No.</div>
+                                <div class="item">
+                                    <input type="text" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item">Drawn On (Bank Name)</div>
+                                <div class="item">
+                                    <input type="text" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item">Payable at</div>
+                                <div class="item">
+                                    <input type="text" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <div>
+                        <input type="submit" />
+                        <input type="reset" />
+                    </div>
+                </div>
+            </form>
+
         </div>
-        <div class="col">
-          <div class="row"><label>Firstname</label> <input type="text" /></div>
-        </div>
-      </div>
-      <button type="button" id="btnSave" name="btnSave" value="Reset" />
-      <button type="button" id="btnSave" name="btnSave" value="Save" />
     </div>
   </body>
 </html>
