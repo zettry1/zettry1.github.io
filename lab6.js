@@ -1,3 +1,20 @@
+//question 1 fix
+function makeArmy() {
+  let shooters = [];
+  let i = 0;
+  while (i < 2) {
+    let j = i;
+    let shooter = function () {
+      console.log(j);
+    };
+    shooters.push(shooter);
+    i++;
+  }
+  return shooters;
+}
+let army = makeArmy();
+army.forEach((f) => f());
+
 //Question 2
 function printNumbers(from, to) {
   while (from <= to) {
