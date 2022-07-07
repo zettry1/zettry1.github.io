@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product </title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col">
+        <div
+          id="form"
+          class="form"
+        >
+          <input type="text" name="username" placeholder="username" />
+          <input type="text" name="lastname"  placeholder="lastname"/>
+          <input type="text" name="productname"  placeholder="product name"/>
+            <textarea id="lastname" placeholder="Your prod description" />
+      </div>
+
+      <form action="/admin/product" method="post">
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input class="form-control" id="title" name="title" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -19,20 +19,21 @@ server.on("request", (req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "");
   const pic = fs.readFileSync(path.join(__dirname, "./happy.jpeg"));
-  res.data.pipe(pic);
+  // res.data.pipe(pic);
+  res.end(pic, "binary");
 });
 
 //sol 2
 server
   .on("request", (req, res) => {
-    const img = require("fs").createReadStream("./tiles.jpg");
+    const img = require("fs").createReadStream("./happy.jpg");
     img.pipe(res);
   })
   .listen(9090, () => console.log("listening to 9090"));
 
 // solution3
 server.on("request", (req, res) => {
-  fs.createReadStream("./tiles.jpg").pipe(res);
+  fs.createReadStream("./happy.jpg").pipe(res);
 });
 server.listen(9000);
 
